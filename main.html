@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"   href="./static/dest/output.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<style>
+  
+  .hover-scale-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.hover-scale-3d:hover {
+  transform: scale3d(2, 2, 2) rotateX(5deg) rotateY(5deg);
+}
+  tr td:nth-last-child(-n+2){
+  border:none;
+  background-color:none;
+
+  }
+  
+  tbody tr:nth-child(odd) {
+  background-color: rgba(255 255 255 / 0.1);
+}
+
+tr td:nth-last-child(-n+2){
+  border:none;
+  background-color: rgb(29, 78, 216);
+
+  }
+
+tr:hover{
+  background-color: rgba(255 255 255 / 0.2);
+}  
+  tr:nth-child(odd):hover{
+    background-color: rgba(255 255 255 / 0.5);
+  }
+
+  th,td{
+    color:white;
+    text-align:center;
+    padding:5px;
+    border: 1px solid rgba(255 255 255 / 0.2);
+  }
+</style>
+
+</head>
+<body class="flex flex-col items-center pb-5" style="background-color:rgb(29, 78, 216); ;">
+<div class="flex gap-10   md:w-auto">  
+  <a class="text-white text-2xl hidden md:block  mt-10 js-logout hover-scale-3d " style="font-family: 'Fredoka One' ">Log Out</a>  
+  <div class="flex w-full md:w-[1000px]  items-center  mt-10">
+  <h1 class="text-white text-4xl mx-4 md:mx-auto   js-heading" style="font-family: 'Fredoka One'">Welcome User!</h1>
+
+  <a class="text-white text-2xl    hover-scale-3d " style="font-family: 'Fredoka One' "href='add.html'>Add</a>  
+
+
+
+</div>
+  <div>
+
+    <a class="text-white text-2xl block md:hidden  mx-auto mt-10 js-logout hover-scale-3d " style="font-family: 'Fredoka One' ">Log Out</a>  
+
+  </div>
+</div>
+
+<form>
+<div class="flex gap-4 ">
+
+  <label class="text-white text-lg     js-heading  " style="font-family: 'Fredoka One'">Date</label><input type="date" class="pl-2 js-date text-white text-lg    js-heading " style="font-family: 'Fredoka One'">
+</div>
+</form> 
+
+
+
+
+
+
+
+<table style="font-family: 'Fredoka One'" class="w-[1000px] mx-auto mt-20 mb-5 ">
+<thead> <tr><th >Date</th><th colspan="4"> To Do </th><th style="display:none">Edit</th><th style="display:none">Delete</th></tr></thead>
+
+<tbody class="js-tbody"></tbody>
+
+
+</table>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

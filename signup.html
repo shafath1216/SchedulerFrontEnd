@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"   href="./static/dest/output.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="flex  items-center justify-center h-screen bg-gradient-to-b from-blue-500 to-blue-700">
+<div class="bg-sky-200 flex flex-col   w-full max-w-md   rounded-3xl">
+ <h1 class="text-blue-800 text-4xl text-center mx-auto mt-10 mb-0" style="font-family: 'Fredoka One'">Sign Up</h1>
+ 
+ <form class="bg-sky-200 w-full from-cyan-100 to-cyan-300 flex flex-col gap-2 justify-center items-center mx-auto p-20 rounded-4xl mt-4">
+ <div class="flex flex-col lg:flex-row gap-2 ">
+  <label style="font-family: 'Fredoka One'" class="text-blue-800">Username</label><input class='bg-white js-username' type="text" name="username">
+ </div>
+ <div class="flex flex-col lg:flex-row gap-3.5">
+ <label style="font-family:'Fredoka One'" class="text-blue-800">Password</label><input class="bg-white js-password" type="password" name="password">
+</div>
+<div class=" flex flex-col  items-center lg:items-start justify-center lg:justify-start  lg:flex-row  gap-3 w-full  lg:pl-20 mt-10">
+<button class= "bg-blue-800  text-gray-200 px-3 py-2 rounded-lg hover:scale-110 transition-transform duration-300 w-full lg:w-auto lg:mx-auto js-signup" style="font-family:'Fredoka One'"> Sign Up</button>
+
+</div> 
+</form>
+
+
+
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>
